@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.4">
+	<ConfigVersions>
+		<Metadata name="Catalog.Компоненты" id="6a037d4a-8e7f-11e8-ba80-0cd2925c3816" configVersion="5a6c91001f8fe811ae800cd2925c381600000000">
+			<Metadata name="Catalog.Компоненты.Attribute.Хост" id="39e1b32e-8e80-11e8-ba80-0cd2925c3816"/>
+			<Metadata name="Catalog.Компоненты.Attribute.Порт" id="683f56b8-8e80-11e8-ba80-0cd2925c3816"/>
+			<Metadata name="Catalog.Компоненты.Attribute.Использование" id="ace7fab4-8e7f-11e8-ba80-0cd2925c3816"/>
+		</Metadata>
+		<Metadata name="Catalog.Компоненты.Form.ФормаЭлемента" id="c98c08fe-8e7f-11e8-ba80-0cd2925c3816" configVersion="928491001f8fe811ae800cd2925c381600000000"/>
+		<Metadata name="Catalog.Компоненты.Form.ФормаЭлемента.Form" id="c98c08fe-8e7f-11e8-ba80-0cd2925c3816.0" configVersion="462e30c31e8fe811ae800cd2925c381600000000"/>
+		<Metadata name="Catalog.Компоненты.ManagerModule" id="6a037d4a-8e7f-11e8-ba80-0cd2925c3816.3" configVersion="3a9f083d868ee811ba800cd2925c381600000000"/>
+		<Metadata name="CommonModule.Компоненты" id="54530932-8e81-11e8-ba80-0cd2925c3816" configVersion="a6e2caaa1e8fe811ae800cd2925c381600000000"/>
+		<Metadata name="CommonModule.Компоненты.Module" id="54530932-8e81-11e8-ba80-0cd2925c3816.0" configVersion="725447aa1e8fe811ae800cd2925c381600000000"/>
+		<Metadata name="CommonModule.КомпонентыВызовСервера" id="7bf950c4-8e84-11e8-ba80-0cd2925c3816" configVersion="e07c91001f8fe811ae800cd2925c381600000000"/>
+		<Metadata name="CommonModule.КомпонентыВызовСервера.Module" id="7bf950c4-8e84-11e8-ba80-0cd2925c3816.0" configVersion="8a1002fd1e8fe811ae800cd2925c381600000000"/>
+		<Metadata name="CommonModule.КомпонентыПовтИсп" id="8f9c5e3a-8e81-11e8-ba80-0cd2925c3816" configVersion="9254590e848ee811ba800cd2925c381600000000"/>
+		<Metadata name="CommonModule.КомпонентыПовтИсп.Module" id="8f9c5e3a-8e81-11e8-ba80-0cd2925c3816.0" configVersion="966e3796828ee811ba800cd2925c381600000000"/>
+		<Metadata name="Configuration.LoggerViewer" id="8554b6aa-8e7e-11e8-ba80-0cd2925c3816" configVersion="6e343e034d99e811cd9b0cd2925c381600000000"/>
+		<Metadata name="DataProcessor.ПросмотрЛогов" id="c6a948d2-8ebc-11e8-c59c-0cd2925c3816" configVersion="e4f1bd10bf8ee811c59c0cd2925c381600000000"/>
+		<Metadata name="DataProcessor.ПросмотрЛогов.Form.Форма" id="d537c656-8ebc-11e8-c59c-0cd2925c3816" configVersion="6af218b24f99e811cd9b0cd2925c381600000000"/>
+		<Metadata name="DataProcessor.ПросмотрЛогов.Form.Форма.Form" id="d537c656-8ebc-11e8-c59c-0cd2925c3816.0" configVersion="109d18b24f99e811cd9b0cd2925c381600000000"/>
+		<Metadata name="InformationRegister.СостояниеКомпонент" id="9083ed88-8e7f-11e8-ba80-0cd2925c3816" configVersion="12745b1b808ee811ba800cd2925c381600000000">
+			<Metadata name="InformationRegister.СостояниеКомпонент.Dimension.Компонента" id="9a2ddbbe-8e7f-11e8-ba80-0cd2925c3816"/>
+			<Metadata name="InformationRegister.СостояниеКомпонент.Resource.Доступность" id="a192f42a-8e7f-11e8-ba80-0cd2925c3816"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="8554b9c0-8e7e-11e8-ba80-0cd2925c3816" configVersion="228126bc7e8ee811ba800cd2925c381600000000"/>
+		<Metadata name="Subsystem.Администрирование" id="36b41fda-8e7f-11e8-ba80-0cd2925c3816" configVersion="90915b1b808ee811ba800cd2925c381600000000"/>
+		<Metadata name="Subsystem.Компоненты" id="626d8376-8e81-11e8-ba80-0cd2925c3816" configVersion="2ec32f29bf8ee811c59c0cd2925c381600000000"/>
+		<Metadata name="Subsystem.Управление" id="1b28e670-8ebf-11e8-c59c-0cd2925c3816" configVersion="52bd2f29bf8ee811c59c0cd2925c381600000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
