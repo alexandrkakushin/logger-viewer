@@ -8,6 +8,11 @@
 				<CommandName>Form.Command.Получить</CommandName>
 				<ExtendedTooltip name="ПолучитьРасширеннаяПодсказка" id="11"/>
 			</Button>
+			<Button name="ФормаОчистить" id="80">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.УдалитьВсеСообщения</CommandName>
+				<ExtendedTooltip name="ФормаОчиститьРасширеннаяПодсказка" id="81"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -444,6 +449,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Получить</Action>
+		</Command>
+		<Command name="УдалитьВсеСообщения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все сообщения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьВсеСообщения</Action>
 		</Command>
 	</Commands>
 </Form>
