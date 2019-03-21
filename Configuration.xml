@@ -45,7 +45,7 @@
 			<ScriptVariant>Russian</ScriptVariant>
 			<DefaultRoles/>
 			<Vendor>Александр Какушин (alexandrkakushin@yandex.ru)</Vendor>
-			<Version>1.0.0.1</Version>
+			<Version>1.0.0.2</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -131,6 +131,7 @@
 			<CommonModule>КомпонентыВызовСервера</CommonModule>
 			<Catalog>Компоненты</Catalog>
 			<DataProcessor>ПросмотрЛогов</DataProcessor>
+			<DataProcessor>ПоследниеСообщенияЧас</DataProcessor>
 			<InformationRegister>СостояниеКомпонент</InformationRegister>
 		</ChildObjects>
 	</Configuration>

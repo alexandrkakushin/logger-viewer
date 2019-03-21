@@ -16,6 +16,7 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПросмотрЛогов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПоследниеСообщенияЧас</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

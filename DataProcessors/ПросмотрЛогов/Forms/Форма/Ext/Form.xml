@@ -8,180 +8,239 @@
 				<CommandName>Form.Command.Получить</CommandName>
 				<ExtendedTooltip name="ПолучитьРасширеннаяПодсказка" id="11"/>
 			</Button>
-			<Button name="ФормаОчистить" id="80">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.УдалитьВсеСообщения</CommandName>
-				<ExtendedTooltip name="ФормаОчиститьРасширеннаяПодсказка" id="81"/>
-			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="ГруппаКомпонентаЛог" id="44">
+		<UsualGroup name="ГруппаГоризонтальная" id="82">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа компонента лог</v8:content>
+					<v8:content>Группа горизонтальная</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа компонента лог</v8:content>
+					<v8:content>Группа горизонтальная</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаКомпонентаЛогРасширеннаяПодсказка" id="45"/>
+			<ExtendedTooltip name="ГруппаГоризонтальнаяРасширеннаяПодсказка" id="83"/>
 			<ChildItems>
-				<InputField name="Компонента" id="1">
-					<DataPath>Компонента</DataPath>
-					<ContextMenu name="КомпонентаКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="КомпонентаРасширеннаяПодсказка" id="3"/>
-					<Events>
-						<Event name="OnChange">КомпонентаПриИзменении</Event>
-					</Events>
-				</InputField>
-				<InputField name="Лог" id="41">
-					<DataPath>Лог</DataPath>
-					<ListChoiceMode>true</ListChoiceMode>
-					<TextEdit>false</TextEdit>
-					<ContextMenu name="ЛогКонтекстноеМеню" id="42"/>
-					<ExtendedTooltip name="ЛогРасширеннаяПодсказка" id="43"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="ГруппаОтбор" id="12">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа отбор</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа отбор</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Vertical</Group>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="13"/>
-			<ChildItems>
-				<InputField name="НачалоПериода" id="4">
-					<DataPath>НачалоПериода</DataPath>
-					<ContextMenu name="НачалоПериодаКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="НачалоПериодаРасширеннаяПодсказка" id="6"/>
-				</InputField>
-				<InputField name="КонецПериода" id="7">
-					<DataPath>КонецПериода</DataPath>
-					<ContextMenu name="КонецПериодаКонтекстноеМеню" id="8"/>
-					<ExtendedTooltip name="КонецПериодаРасширеннаяПодсказка" id="9"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="ГруппаСообщения" id="14">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Сообщения</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа сообщения</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Vertical</Group>
-			<ExtendedTooltip name="ГруппаСообщенияРасширеннаяПодсказка" id="15"/>
-			<ChildItems>
-				<Table name="СообщенияОтображение" id="52">
-					<Representation>List</Representation>
-					<ReadOnly>true</ReadOnly>
-					<ChangeRowSet>false</ChangeRowSet>
-					<ChangeRowOrder>false</ChangeRowOrder>
-					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
-					<DataPath>СообщенияОтображение</DataPath>
-					<RowFilter xsi:nil="true"/>
-					<ContextMenu name="СообщенияОтображениеКонтекстноеМеню" id="53"/>
-					<AutoCommandBar name="СообщенияОтображениеКоманднаяПанель" id="54">
-						<Autofill>false</Autofill>
-					</AutoCommandBar>
-					<ExtendedTooltip name="СообщенияОтображениеРасширеннаяПодсказка" id="55"/>
-					<SearchStringAddition name="СообщенияОтображениеСтрокаПоиска" id="56">
-						<AdditionSource>
-							<Item>СообщенияОтображение</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="СообщенияОтображениеСтрокаПоискаКонтекстноеМеню" id="57"/>
-						<ExtendedTooltip name="СообщенияОтображениеСтрокаПоискаРасширеннаяПодсказка" id="58"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="СообщенияОтображениеСостояниеПросмотра" id="59">
-						<AdditionSource>
-							<Item>СообщенияОтображение</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="СообщенияОтображениеСостояниеПросмотраКонтекстноеМеню" id="60"/>
-						<ExtendedTooltip name="СообщенияОтображениеСостояниеПросмотраРасширеннаяПодсказка" id="61"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="СообщенияОтображениеУправлениеПоиском" id="62">
-						<AdditionSource>
-							<Item>СообщенияОтображение</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="СообщенияОтображениеУправлениеПоискомКонтекстноеМеню" id="63"/>
-						<ExtendedTooltip name="СообщенияОтображениеУправлениеПоискомРасширеннаяПодсказка" id="64"/>
-					</SearchControlAddition>
+				<UsualGroup name="ГруппаЛоги" id="84">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа логи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа логи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЛогиРасширеннаяПодсказка" id="85"/>
 					<ChildItems>
-						<InputField name="СообщенияОтображениеПериод" id="74">
-							<DataPath>СообщенияОтображение.Период</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="СообщенияОтображениеПериодКонтекстноеМеню" id="75"/>
-							<ExtendedTooltip name="СообщенияОтображениеПериодРасширеннаяПодсказка" id="76"/>
+						<InputField name="Компонента" id="1">
+							<DataPath>Компонента</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="КомпонентаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КомпонентаРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">КомпонентаПриИзменении</Event>
+							</Events>
 						</InputField>
-						<InputField name="СообщенияОтображениеОбъект" id="65">
-							<DataPath>СообщенияОтображение.Объект</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="СообщенияОтображениеОбъектКонтекстноеМеню" id="66"/>
-							<ExtendedTooltip name="СообщенияОтображениеОбъектРасширеннаяПодсказка" id="67"/>
-						</InputField>
-						<InputField name="СообщенияОтображениеУровень" id="68">
-							<DataPath>СообщенияОтображение.Уровень</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="СообщенияОтображениеУровеньКонтекстноеМеню" id="69"/>
-							<ExtendedTooltip name="СообщенияОтображениеУровеньРасширеннаяПодсказка" id="70"/>
-						</InputField>
-						<InputField name="СообщенияОтображениеТекст" id="71">
-							<DataPath>СообщенияОтображение.Текст</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="СообщенияОтображениеТекстКонтекстноеМеню" id="72"/>
-							<ExtendedTooltip name="СообщенияОтображениеТекстРасширеннаяПодсказка" id="73"/>
-						</InputField>
-						<InputField name="СообщенияОтображениеКоличество" id="77">
-							<DataPath>СообщенияОтображение.Количество</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="СообщенияОтображениеКоличествоКонтекстноеМеню" id="78"/>
-							<ExtendedTooltip name="СообщенияОтображениеКоличествоРасширеннаяПодсказка" id="79"/>
-						</InputField>
+						<Table name="Логи" id="86">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<DataPath>Логи</DataPath>
+							<RowPictureDataPath>Логи.Picture</RowPictureDataPath>
+							<ContextMenu name="ЛогиКонтекстноеМеню" id="87"/>
+							<AutoCommandBar name="ЛогиКоманднаяПанель" id="88"/>
+							<ExtendedTooltip name="ЛогиРасширеннаяПодсказка" id="89"/>
+							<SearchStringAddition name="ЛогиСтрокаПоиска" id="90">
+								<AdditionSource>
+									<Item>Логи</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛогиСтрокаПоискаКонтекстноеМеню" id="91"/>
+								<ExtendedTooltip name="ЛогиСтрокаПоискаРасширеннаяПодсказка" id="92"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЛогиСостояниеПросмотра" id="93">
+								<AdditionSource>
+									<Item>Логи</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛогиСостояниеПросмотраКонтекстноеМеню" id="94"/>
+								<ExtendedTooltip name="ЛогиСостояниеПросмотраРасширеннаяПодсказка" id="95"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЛогиУправлениеПоиском" id="96">
+								<AdditionSource>
+									<Item>Логи</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЛогиУправлениеПоискомКонтекстноеМеню" id="97"/>
+								<ExtendedTooltip name="ЛогиУправлениеПоискомРасширеннаяПодсказка" id="98"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnActivateRow">ЛогиПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ЛогиЗначение" id="99">
+									<DataPath>Логи.Value</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ЛогиЗначениеКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="ЛогиЗначениеРасширеннаяПодсказка" id="101"/>
+								</InputField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
-				</Table>
-				<CheckBoxField name="Группировать" id="49">
-					<DataPath>ГруппироватьСообщения</DataPath>
-					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ГруппироватьКонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="ГруппироватьРасширеннаяПодсказка" id="51"/>
-					<Events>
-						<Event name="OnChange">ГруппироватьПриИзменении</Event>
-					</Events>
-				</CheckBoxField>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСообщения" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сообщения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа сообщения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСообщенияРасширеннаяПодсказка" id="15"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОтбор" id="12">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отбор</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа отбор</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="13"/>
+							<ChildItems>
+								<InputField name="НачалоПериода" id="4">
+									<DataPath>НачалоПериода</DataPath>
+									<ContextMenu name="НачалоПериодаКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="НачалоПериодаРасширеннаяПодсказка" id="6"/>
+								</InputField>
+								<InputField name="КонецПериода" id="7">
+									<DataPath>КонецПериода</DataPath>
+									<ContextMenu name="КонецПериодаКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="КонецПериодаРасширеннаяПодсказка" id="9"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="СообщенияОтображение" id="52">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>СообщенияОтображение</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СообщенияОтображениеКонтекстноеМеню" id="53"/>
+							<AutoCommandBar name="СообщенияОтображениеКоманднаяПанель" id="54">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СообщенияОтображениеРасширеннаяПодсказка" id="55"/>
+							<SearchStringAddition name="СообщенияОтображениеСтрокаПоиска" id="56">
+								<AdditionSource>
+									<Item>СообщенияОтображение</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СообщенияОтображениеСтрокаПоискаКонтекстноеМеню" id="57"/>
+								<ExtendedTooltip name="СообщенияОтображениеСтрокаПоискаРасширеннаяПодсказка" id="58"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СообщенияОтображениеСостояниеПросмотра" id="59">
+								<AdditionSource>
+									<Item>СообщенияОтображение</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СообщенияОтображениеСостояниеПросмотраКонтекстноеМеню" id="60"/>
+								<ExtendedTooltip name="СообщенияОтображениеСостояниеПросмотраРасширеннаяПодсказка" id="61"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СообщенияОтображениеУправлениеПоиском" id="62">
+								<AdditionSource>
+									<Item>СообщенияОтображение</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СообщенияОтображениеУправлениеПоискомКонтекстноеМеню" id="63"/>
+								<ExtendedTooltip name="СообщенияОтображениеУправлениеПоискомРасширеннаяПодсказка" id="64"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="СообщенияОтображениеПериод" id="74">
+									<DataPath>СообщенияОтображение.Период</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СообщенияОтображениеПериодКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="СообщенияОтображениеПериодРасширеннаяПодсказка" id="76"/>
+								</InputField>
+								<InputField name="СообщенияОтображениеОбъект" id="65">
+									<DataPath>СообщенияОтображение.Объект</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СообщенияОтображениеОбъектКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="СообщенияОтображениеОбъектРасширеннаяПодсказка" id="67"/>
+								</InputField>
+								<InputField name="СообщенияОтображениеУровень" id="68">
+									<DataPath>СообщенияОтображение.Уровень</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СообщенияОтображениеУровеньКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="СообщенияОтображениеУровеньРасширеннаяПодсказка" id="70"/>
+								</InputField>
+								<InputField name="СообщенияОтображениеТекст" id="71">
+									<DataPath>СообщенияОтображение.Текст</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СообщенияОтображениеТекстКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="СообщенияОтображениеТекстРасширеннаяПодсказка" id="73"/>
+								</InputField>
+								<InputField name="СообщенияОтображениеКоличество" id="77">
+									<DataPath>СообщенияОтображение.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СообщенияОтображениеКоличествоКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="СообщенияОтображениеКоличествоРасширеннаяПодсказка" id="79"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<CheckBoxField name="Группировать" id="49">
+							<DataPath>ГруппироватьСообщения</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ГруппироватьКонтекстноеМеню" id="50"/>
+							<ExtendedTooltip name="ГруппироватьРасширеннаяПодсказка" id="51"/>
+							<Events>
+								<Event name="OnChange">ГруппироватьПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -319,11 +378,11 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<Attribute name="Лог" id="6">
+		<Attribute name="ВыбранныйЛог" id="6">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Лог</v8:content>
+					<v8:content>Выбранный лог</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -433,6 +492,24 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="Логи" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Получить" id="1">
@@ -449,21 +526,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Получить</Action>
-		</Command>
-		<Command name="УдалитьВсеСообщения" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Очистить</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Удалить все сообщения</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>УдалитьВсеСообщения</Action>
 		</Command>
 	</Commands>
 </Form>
