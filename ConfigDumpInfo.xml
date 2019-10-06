@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.4">
 	<ConfigVersions>
-		<Metadata name="Catalog.Компоненты" id="6a037d4a-8e7f-11e8-ba80-0cd2925c3816" configVersion="73708d0df34ca1439e976e53965ef91f00000000">
+		<Metadata name="Catalog.Компоненты" id="6a037d4a-8e7f-11e8-ba80-0cd2925c3816" configVersion="776cde5ac964614a945f48868263c30d00000000">
 			<Metadata name="Catalog.Компоненты.Attribute.Хост" id="39e1b32e-8e80-11e8-ba80-0cd2925c3816"/>
 			<Metadata name="Catalog.Компоненты.Attribute.Порт" id="683f56b8-8e80-11e8-ba80-0cd2925c3816"/>
 			<Metadata name="Catalog.Компоненты.Attribute.Использование" id="ace7fab4-8e7f-11e8-ba80-0cd2925c3816"/>
@@ -13,6 +13,7 @@
 		<Metadata name="Catalog.Компоненты.Form.ФормаЭлемента" id="c98c08fe-8e7f-11e8-ba80-0cd2925c3816" configVersion="f71a386be919534cb48a55d3bae870b600000000"/>
 		<Metadata name="Catalog.Компоненты.Form.ФормаЭлемента.Form" id="c98c08fe-8e7f-11e8-ba80-0cd2925c3816.0" configVersion="b9468fad317a36449f37f62a5643baf600000000"/>
 		<Metadata name="Catalog.Компоненты.ManagerModule" id="6a037d4a-8e7f-11e8-ba80-0cd2925c3816.3" configVersion="8a1e04ab0bf44044a5cbb83c99da5b8a00000000"/>
+		<Metadata name="Catalog.Компоненты.ObjectModule" id="6a037d4a-8e7f-11e8-ba80-0cd2925c3816.0" configVersion="2f1851139fa56c49b55d9d12e1364d8700000000"/>
 		<Metadata name="CommonModule.Компоненты" id="54530932-8e81-11e8-ba80-0cd2925c3816" configVersion="9a6214e11b7a52478c4f92802a514c2700000000"/>
 		<Metadata name="CommonModule.Компоненты.Module" id="54530932-8e81-11e8-ba80-0cd2925c3816.0" configVersion="91d8c53a779cde458b0be4f544154af000000000"/>
 		<Metadata name="CommonModule.КомпонентыВызовСервера" id="7bf950c4-8e84-11e8-ba80-0cd2925c3816" configVersion="8bd632ae1beec04f8daa27ac4a7d6d2200000000"/>
