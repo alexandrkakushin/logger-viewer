@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.9">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
@@ -130,73 +130,96 @@
 				</v8:item>
 			</ToolTip>
 			<ExtendedTooltip name="ГруппаСоставРасширеннаяПодсказка" id="47"/>
-			<ChildItems>
-				<Table name="Логи" id="48">
-					<Representation>List</Representation>
-					<ReadOnly>true</ReadOnly>
-					<ChangeRowSet>false</ChangeRowSet>
-					<ChangeRowOrder>false</ChangeRowOrder>
-					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
-					<DataPath>Логи</DataPath>
-					<RowFilter xsi:nil="true"/>
-					<ContextMenu name="ЛогиКонтекстноеМеню" id="49"/>
-					<AutoCommandBar name="ЛогиКоманднаяПанель" id="50">
-						<ChildItems>
-							<Button name="ЛогиОчиститьЛог" id="64">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ОчиститьЛог</CommandName>
-								<ExtendedTooltip name="ЛогиОчиститьЛогРасширеннаяПодсказка" id="65"/>
-							</Button>
-							<Button name="ЛогиПросмотретьЛог" id="66">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ПросмотретьЛог</CommandName>
-								<ExtendedTooltip name="ЛогиПросмотретьЛогРасширеннаяПодсказка" id="67"/>
-							</Button>
-							<Button name="ЛогиОбновитьСписокЛогов" id="68">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ОбновитьСписокЛогов</CommandName>
-								<ExtendedTooltip name="ЛогиОбновитьСписокЛоговРасширеннаяПодсказка" id="69"/>
-							</Button>
-						</ChildItems>
-					</AutoCommandBar>
-					<ExtendedTooltip name="ЛогиРасширеннаяПодсказка" id="51"/>
-					<SearchStringAddition name="ЛогиСтрокаПоиска" id="52">
-						<AdditionSource>
-							<Item>Логи</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ЛогиСтрокаПоискаКонтекстноеМеню" id="53"/>
-						<ExtendedTooltip name="ЛогиСтрокаПоискаРасширеннаяПодсказка" id="54"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="ЛогиСостояниеПросмотра" id="55">
-						<AdditionSource>
-							<Item>Логи</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ЛогиСостояниеПросмотраКонтекстноеМеню" id="56"/>
-						<ExtendedTooltip name="ЛогиСостояниеПросмотраРасширеннаяПодсказка" id="57"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="ЛогиУправлениеПоиском" id="58">
-						<AdditionSource>
-							<Item>Логи</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="ЛогиУправлениеПоискомКонтекстноеМеню" id="59"/>
-						<ExtendedTooltip name="ЛогиУправлениеПоискомРасширеннаяПодсказка" id="60"/>
-					</SearchControlAddition>
-					<ChildItems>
-						<InputField name="ЛогиЛог" id="61">
-							<DataPath>Логи.Лог</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ЛогиЛогКонтекстноеМеню" id="62"/>
-							<ExtendedTooltip name="ЛогиЛогРасширеннаяПодсказка" id="63"/>
-						</InputField>
-					</ChildItems>
-				</Table>
-			</ChildItems>
 		</UsualGroup>
+		<Table name="Логи" id="48">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Логи</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЛогиКонтекстноеМеню" id="49"/>
+			<AutoCommandBar name="ЛогиКоманднаяПанель" id="50">
+				<ChildItems>
+					<Button name="ЛогиДоступныеЛоги" id="76">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДоступныеЛоги</CommandName>
+						<ExtendedTooltip name="ЛогиДоступныеЛогиРасширеннаяПодсказка" id="77"/>
+					</Button>
+					<Button name="ЛогиПросмотретьЛог" id="78">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПросмотретьЛог</CommandName>
+						<ExtendedTooltip name="ЛогиПросмотретьЛогРасширеннаяПодсказка" id="79"/>
+					</Button>
+					<Button name="ЛогиОчиститьЛог" id="80">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОчиститьЛог</CommandName>
+						<ExtendedTooltip name="ЛогиОчиститьЛогРасширеннаяПодсказка" id="81"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ЛогиРасширеннаяПодсказка" id="51"/>
+			<SearchStringAddition name="ЛогиСтрокаПоиска" id="52">
+				<AdditionSource>
+					<Item>Логи</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЛогиСтрокаПоискаКонтекстноеМеню" id="53"/>
+				<ExtendedTooltip name="ЛогиСтрокаПоискаРасширеннаяПодсказка" id="54"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЛогиСостояниеПросмотра" id="55">
+				<AdditionSource>
+					<Item>Логи</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЛогиСостояниеПросмотраКонтекстноеМеню" id="56"/>
+				<ExtendedTooltip name="ЛогиСостояниеПросмотраРасширеннаяПодсказка" id="57"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЛогиУправлениеПоиском" id="58">
+				<AdditionSource>
+					<Item>Логи</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЛогиУправлениеПоискомКонтекстноеМеню" id="59"/>
+				<ExtendedTooltip name="ЛогиУправлениеПоискомРасширеннаяПодсказка" id="60"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ЛогиНомерСтроки" id="61">
+					<DataPath>Объект.Логи.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЛогиНомерСтрокиКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ЛогиНомерСтрокиРасширеннаяПодсказка" id="63"/>
+				</LabelField>
+				<CheckBoxField name="ЛогиАктивность" id="64">
+					<DataPath>Объект.Логи.Активность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЛогиАктивностьКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ЛогиАктивностьРасширеннаяПодсказка" id="66"/>
+				</CheckBoxField>
+				<InputField name="ЛогиПредставление" id="70">
+					<DataPath>Объект.Логи.Представление</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЛогиПредставлениеКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ЛогиПредставлениеРасширеннаяПодсказка" id="72"/>
+				</InputField>
+				<InputField name="ЛогиИмяФайла" id="67">
+					<DataPath>Объект.Логи.ИмяФайла</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЛогиИмяФайлаКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ЛогиИмяФайлаРасширеннаяПодсказка" id="69"/>
+				</InputField>
+				<InputField name="ЛогиОписание" id="73">
+					<DataPath>Объект.Логи.Описание</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЛогиОписаниеКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="ЛогиОписаниеРасширеннаяПодсказка" id="75"/>
+				</InputField>
+			</ChildItems>
+		</Table>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -221,34 +244,6 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="Логи" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Логи</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8:ValueTable</v8:Type>
-			</Type>
-			<Columns>
-				<Column name="Лог" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Лог</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-				</Column>
-			</Columns>
-		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОчиститьЛог" id="1">
@@ -265,6 +260,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОчиститьЛог</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ПросмотретьЛог" id="2">
 			<Title>
@@ -280,21 +276,22 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПросмотретьЛог</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="ОбновитьСписокЛогов" id="3">
+		<Command name="ДоступныеЛоги" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Обновить</v8:content>
+					<v8:content>Доступные логи</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Обновить список логов</v8:content>
+					<v8:content>Доступные логи</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ОбновитьСписокЛогов</Action>
+			<Action>ДоступныеЛоги</Action>
 		</Command>
 	</Commands>
 </Form>
