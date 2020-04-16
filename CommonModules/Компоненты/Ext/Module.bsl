@@ -70,8 +70,10 @@
 	Прокси = ПроксиКомпоненты(Компонента);
 	Если Прокси <> Неопределено Тогда
 		ПараметрыXDTO = Прокси.ФабрикаXDTO.Создать("http://info.ak.ru/", "messagesByPeriod");		
-		ПараметрыXDTO.connection = Прокси.ФабрикаXDTO.Создать("http://connection.logger.ak.ru/", "sqliteConnection");
-		ПараметрыXDTO.connection.fileName = Лог;		
+		
+		ПараметрыXDTO.connection = XDTOConnection(Прокси);		
+		ПараметрыXDTO.connection.fileName = Лог;
+		
 		ПараметрыXDTO.from = НачалоПериода;
 		ПараметрыXDTO.to   = КонецПериода;
 				
@@ -97,7 +99,7 @@
 	
 	Прокси = ПроксиКомпоненты(Компонента);
 	Если Прокси <> Неопределено Тогда
-		connection = Прокси.ФабрикаXDTO.Создать("http://info.ak.ru/", "sqliteConnection");
+		connection = XDTOConnection(Прокси);
 		connection.fileName = Лог;		
 				
 		РезультатXDTO = Прокси.clearMessages(connection);
@@ -106,6 +108,29 @@
 	
 	Возврат Результат;
 		
+КонецФункции
+
+#КонецОбласти
+
+
+///////////////////////////////////////////////////////////////////////////////
+// СЛУЖЕБНЫЕ ПРОЦЕДУРЫ И ФУНКЦИИ
+
+#Область СлужебныеПроцедурыИФункции
+
+Функция XDTOConnection(Прокси)
+	
+	connection = Неопределено;
+	
+	Попытка
+		connection = Прокси.ФабрикаXDTO.Создать("http://connection.logger.ak.ru/", "sqliteConnection");
+	Исключение
+		// Для совместимости с первыми версиями компоненты
+		connection = Прокси.ФабрикаXDTO.Создать("http://info.ak.ru/", "sqliteConnection");
+	КонецПопытки;
+	
+	Возврат connection;
+	
 КонецФункции
 
 #КонецОбласти

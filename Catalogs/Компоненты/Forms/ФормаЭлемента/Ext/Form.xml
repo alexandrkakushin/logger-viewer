@@ -135,6 +135,7 @@
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
 			<DataPath>Объект.Логи</DataPath>
 			<CommandSet>
 				<ExcludedCommand>Add</ExcludedCommand>
@@ -292,6 +293,7 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДоступныеЛоги</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>
