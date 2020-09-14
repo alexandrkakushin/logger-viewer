@@ -27,8 +27,8 @@
 		<Metadata name="CommonForm.ПросмотрЛогов.Form" id="40187385-91ce-446e-830f-7d363e4fe994.0" configVersion="0e903a6124b0a849b106c81a0f04af7900000000"/>
 		<Metadata name="CommonForm.Сообщение" id="13ea40b1-3158-47a3-87d0-ac4a9d11cd03" configVersion="f50aa1497f4c4f43b6c11bc5019ff44d00000000"/>
 		<Metadata name="CommonForm.Сообщение.Form" id="13ea40b1-3158-47a3-87d0-ac4a9d11cd03.0" configVersion="097518bf0a80e140b6c12d10e4bbde3c00000000"/>
-		<Metadata name="CommonModule.Компоненты" id="54530932-8e81-11e8-ba80-0cd2925c3816" configVersion="29f88a5ce7effd4d801c2f5ce3d49d8200000000"/>
-		<Metadata name="CommonModule.Компоненты.Module" id="54530932-8e81-11e8-ba80-0cd2925c3816.0" configVersion="697a842f2ecf6445b5d8ff06b67eb3a500000000"/>
+		<Metadata name="CommonModule.Компоненты" id="54530932-8e81-11e8-ba80-0cd2925c3816" configVersion="5a4fbfc62888e94e9f5820f878859f9700000000"/>
+		<Metadata name="CommonModule.Компоненты.Module" id="54530932-8e81-11e8-ba80-0cd2925c3816.0" configVersion="7d61bdc20e114b45a6f67224aa16580700000000"/>
 		<Metadata name="CommonModule.КомпонентыВызовСервера" id="7bf950c4-8e84-11e8-ba80-0cd2925c3816" configVersion="6551207bb9ffeb438a2d488a2ffcbc9d00000000"/>
 		<Metadata name="CommonModule.КомпонентыВызовСервера.Module" id="7bf950c4-8e84-11e8-ba80-0cd2925c3816.0" configVersion="561cde053942a7498184ec68f851ef7800000000"/>
 		<Metadata name="CommonModule.КомпонентыПовтИсп" id="8f9c5e3a-8e81-11e8-ba80-0cd2925c3816" configVersion="d49fd4082b331340bc8052cc1d2c0a1300000000"/>
