@@ -3,7 +3,7 @@
 	<WorkingAreaTemplate>TwoColumnsEqualWidth</WorkingAreaTemplate>
 	<LeftColumn>
 		<Item>
-			<Form>DataProcessor.ПоследниеСообщенияЧас.Form.Форма</Form>
+			<Form>2c96f5c9-5de6-45a4-a0d6-00a9ab07d2ff</Form>
 			<Height>10</Height>
 			<Visibility>
 				<xr:Common>true</xr:Common>

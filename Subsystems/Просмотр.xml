@@ -15,7 +15,7 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПоследниеСообщенияЧас</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">41d47fcb-3f3c-4492-8482-cb9c1c4af85e</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПоКомпонентам</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЛоггерКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.Сообщение</xr:Item>
