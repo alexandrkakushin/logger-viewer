@@ -35,7 +35,7 @@
 		<Metadata name="CommonModule.КомпонентыПовтИсп.Module" id="8f9c5e3a-8e81-11e8-ba80-0cd2925c3816.0" configVersion="faf3aacc5076b243b77e1d34ef07ccee00000000"/>
 		<Metadata name="CommonModule.ЛоггерКлиент" id="f843f5ce-7efb-42a5-9a36-f6242d4114a4" configVersion="dc103358db40e04db218f4b952f5011600000000"/>
 		<Metadata name="CommonModule.ЛоггерКлиент.Module" id="f843f5ce-7efb-42a5-9a36-f6242d4114a4.0" configVersion="5fc70db41febb6498cf929e93ee66a6700000000"/>
-		<Metadata name="Configuration.LoggerViewer" id="8554b6aa-8e7e-11e8-ba80-0cd2925c3816" configVersion="283344f082dfdd42bb04c7260b0b0c6900000000"/>
+		<Metadata name="Configuration.LoggerViewer" id="8554b6aa-8e7e-11e8-ba80-0cd2925c3816" configVersion="983490253bc0854bbd5ccc75eeb9261500000000"/>
 		<Metadata name="Configuration.LoggerViewer.CommandInterface" id="8554b6ab-8e7e-11e8-ba80-0cd2925c3816.a" configVersion="f395a0a609e8bc4e99e2b8617e30868b00000000"/>
 		<Metadata name="Configuration.LoggerViewer.HomePageWorkArea" id="8554b6ab-8e7e-11e8-ba80-0cd2925c3816.8" configVersion="843217a93c0f064eb9aded3b1607d64800000000"/>
 		<Metadata name="Language.Русский" id="8554b9c0-8e7e-11e8-ba80-0cd2925c3816" configVersion="eb16074d6eb1b144b32dd2743f467ede00000000"/>
