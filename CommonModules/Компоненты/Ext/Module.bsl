@@ -62,7 +62,78 @@
 		
 КонецФункции
 
-Функция Сообщения(Компонента, Лог, НачалоПериода, КонецПериода, Лимит = 100, Смещение = 0) Экспорт
+Функция ОчиститьВсеСообщения(Компонента, Лог) Экспорт
+	
+	Результат = Ложь;
+	
+	Прокси = ПроксиКомпоненты(Компонента);
+	Если Прокси <> Неопределено Тогда
+		connection = XDTOConnection(Прокси);
+		connection.fileName = Лог;		
+				
+		РезультатXDTO = Прокси.clearMessages(connection);
+		Результат = Не РезультатXDTO.error;		
+	КонецЕсли;
+	
+	Возврат Результат;
+		
+КонецФункции
+
+// Поиск
+
+Функция ПоискПоПериоду(Компонента, Лог, НачалоПериода, КонецПериода, Лимит = 100, Смещение = 0) Экспорт
+	
+	ТекстЗапроса = СтрШаблон(
+		"<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:info=""http://info.ak.ru/"" xmlns:con=""http://connection.logger.ak.ru/"">
+		|   <soapenv:Header/>
+		|   <soapenv:Body>
+		|      <info:messagesByPeriod>
+		|         <connection>
+		|            <con:fileName>%1</con:fileName>
+		|         </connection>         
+		|         <from>%2</from>
+		|         <to>%3</to>
+		|         <limit>%4</limit>
+		|         <offset>%5</offset>
+		|      </info:messagesByPeriod>
+		|   </soapenv:Body>
+		|</soapenv:Envelope>",
+			Лог, 
+			Формат(НачалоПериода, "ДФ=yyyy-MM-dd"), 
+			Формат(КонецПериода, "ДФ=yyyy-MM-dd"),
+			Формат(Лимит, "ЧГ=0"),
+			Формат(Смещение, "ЧН=0; ЧГ=0"));
+		
+	Возврат Поиск(Компонента, Лог, ТекстЗапроса, "messagesByPeriod", Лимит, Смещение);
+			
+КонецФункции
+
+Функция ПоискПоТексту(Компонента, Лог, Текст, Лимит = 100, Смещение = 0) Экспорт
+		
+	ТекстЗапроса = СтрШаблон(
+		"<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:info=""http://info.ak.ru/"" xmlns:con=""http://connection.logger.ak.ru/"">
+		|   <soapenv:Header/>
+		|   <soapenv:Body>
+		|      <info:messagesByText>
+		|         <connection>
+		|            <con:fileName>%1</con:fileName>
+		|         </connection>         
+		|         <text>%2</text>
+		|         <limit>%3</limit>
+		|         <offset>%4</offset>
+		|      </info:messagesByText>
+		|   </soapenv:Body>
+		|</soapenv:Envelope>",
+			Лог, 
+			Текст,
+			Формат(Лимит, "ЧГ=0"),
+			Формат(Смещение, "ЧН=0; ЧГ=0"));
+								
+	Возврат Поиск(Компонента, Лог, ТекстЗапроса, "messagesByText", Лимит, Смещение);
+			
+КонецФункции
+
+Функция Поиск(Компонента, Лог, ТекстЗапроса, Метод, Лимит, Смещение)
 	
 	Результат = Новый Структура("Сообщения, Количество", Новый Массив(), 0);
 	
@@ -74,35 +145,14 @@
 	Попытка			
 		Соединение = Новый HTTPСоединение(Компонента.Хост, Компонента.Порт);
 			
-		ТекстЗапроса = СтрШаблон(
-			"<soapenv:Envelope xmlns:soapenv=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:info=""http://info.ak.ru/"" xmlns:con=""http://connection.logger.ak.ru/"">
-			|   <soapenv:Header/>
-			|   <soapenv:Body>
-			|      <info:messagesByPeriod>
-			|         <connection>
-			|            <con:fileName>%1</con:fileName>
-			|         </connection>         
-			|         <from>%2</from>
-			|         <to>%3</to>
-			|         <limit>%4</limit>
-			|         <offset>%5</offset>
-			|      </info:messagesByPeriod>
-			|   </soapenv:Body>
-			|</soapenv:Envelope>",
-				Лог, 
-				Формат(НачалоПериода, "ДФ=yyyy-MM-dd"), 
-				Формат(КонецПериода, "ДФ=yyyy-MM-dd"),
-				Формат(Лимит, "ЧГ=0"),
-				Формат(Смещение, "ЧН=0; ЧГ=0"));
-								
-		Заголовки = Новый Соответствие;
-
+		Заголовки = Новый Соответствие();
 		Заголовки.Вставить("Content-Type", "text/xml;charset=UTF-8");
 		
-		Запрос = Новый HTTPЗапрос("/Info/messagesByPeriod", Заголовки);
+		Запрос = Новый HTTPЗапрос("/Info/" + Метод, Заголовки);
 		Запрос.УстановитьТелоИзСтроки(ТекстЗапроса);
 		
 		ОтветСервера = Соединение.ОтправитьДляОбработки(Запрос);
+		
 		Если ОтветСервера.КодСостояния = 200 Тогда
 			ТелоОтвета = ОтветСервера.ПолучитьТелоКакСтроку();
 			
@@ -111,7 +161,7 @@
 		    Фабрика = Новый ФабрикаXDTO();
 		    ТелоXDTO = Фабрика.ПрочитатьXML(ЧтениеXML);
 			
-			РезультатXDTO = ТелоXDTO.Body.messagesByPeriodResponse.return;
+			РезультатXDTO = ТелоXDTO.Body[Метод + "Response"].return;
 			Если Число(РезультатXDTO.count) > 0 Тогда
 				Источник = Новый Массив();
 				
@@ -148,23 +198,6 @@
 	Исключение
 		Сообщить(НСтр("ru = 'Не удалось загрузить сообщения компоненты'"));
 	КонецПопытки;
-	
-	Возврат Результат;
-	
-КонецФункции
-
-Функция ОчиститьВсеСообщения(Компонента, Лог) Экспорт
-	
-	Результат = Ложь;
-	
-	Прокси = ПроксиКомпоненты(Компонента);
-	Если Прокси <> Неопределено Тогда
-		connection = XDTOConnection(Прокси);
-		connection.fileName = Лог;		
-				
-		РезультатXDTO = Прокси.clearMessages(connection);
-		Результат = Не РезультатXDTO.error;		
-	КонецЕсли;
 	
 	Возврат Результат;
 		

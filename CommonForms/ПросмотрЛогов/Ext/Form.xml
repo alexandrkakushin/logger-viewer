@@ -168,16 +168,59 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="13"/>
 							<ChildItems>
-								<InputField name="НачалоПериода" id="4">
-									<DataPath>НачалоПериода</DataPath>
-									<ContextMenu name="НачалоПериодаКонтекстноеМеню" id="5"/>
-									<ExtendedTooltip name="НачалоПериодаРасширеннаяПодсказка" id="6"/>
-								</InputField>
-								<InputField name="КонецПериода" id="7">
-									<DataPath>КонецПериода</DataPath>
-									<ContextMenu name="КонецПериодаКонтекстноеМеню" id="8"/>
-									<ExtendedTooltip name="КонецПериодаРасширеннаяПодсказка" id="9"/>
-								</InputField>
+								<Pages name="СтраницыОтборы" id="117">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы отборы</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы отборы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ExtendedTooltip name="СтраницыОтборыРасширеннаяПодсказка" id="118"/>
+									<ChildItems>
+										<Page name="СтраницаОтборПоПериоду" id="119">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По периоду</v8:content>
+												</v8:item>
+											</Title>
+											<Group>HorizontalIfPossible</Group>
+											<ExtendedTooltip name="СтраницаОтборПоПериодуРасширеннаяПодсказка" id="120"/>
+											<ChildItems>
+												<InputField name="ОтборПоПериоду" id="126">
+													<DataPath>ОтборПоПериоду</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ContextMenu name="ОтборПоПериодуКонтекстноеМеню" id="127"/>
+													<ExtendedTooltip name="ОтборПоПериодуРасширеннаяПодсказка" id="128"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаПоТексту" id="121">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По тексту</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СтраницаПоТекстуРасширеннаяПодсказка" id="122"/>
+											<ChildItems>
+												<InputField name="ОтборПоТексту" id="123">
+													<DataPath>ОтборПоТексту</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ContextMenu name="ОтборПоТекстуКонтекстноеМеню" id="124"/>
+													<ExtendedTooltip name="ОтборПоТекстуРасширеннаяПодсказка" id="125"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
 							</ChildItems>
 						</UsualGroup>
 						<Table name="СообщенияОтображение" id="52">
@@ -362,34 +405,6 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.Компоненты</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="НачалоПериода" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Начало</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:dateTime</v8:Type>
-				<v8:DateQualifiers>
-					<v8:DateFractions>Date</v8:DateFractions>
-				</v8:DateQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="КонецПериода" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Конец</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:dateTime</v8:Type>
-				<v8:DateQualifiers>
-					<v8:DateFractions>Date</v8:DateFractions>
-				</v8:DateQualifiers>
 			</Type>
 		</Attribute>
 		<Attribute name="Сообщения" id="5">
@@ -671,6 +686,32 @@
 					<v8:FractionDigits>0</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоТексту" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по тексту</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоПериоду" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор по периоду</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
